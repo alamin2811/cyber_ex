@@ -1,0 +1,13 @@
+<svg width="1172" height="500" viewBox="0 0 1172 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M922.772 1.00061C854.854 1.15554 793.365 28.789 748.706 73.4319C706.062 116.061 647.93 139.334 587.794 139.334H584.217C524.081 139.334 465.949 116.072 423.305 73.4319C378.646 28.789 317.157 1.15554 249.228 1.00061C114.03 0.701809 2.9069 110.538 1.02456 246.448C-0.901797 385.589 110.717 499 248.678 499C316.552 499 378.052 471.544 422.777 427.078C465.718 384.394 523.817 360.667 584.206 360.667H587.794C648.183 360.667 706.271 384.394 749.223 427.078C793.959 471.544 855.448 499 923.322 499C1061.28 499 1172.9 385.589 1170.98 246.448C1169.09 110.538 1057.97 0.701809 922.772 1.00061Z" stroke="white" stroke-opacity="0.15" stroke-miterlimit="10" stroke-dasharray="4 4"/>
+<line x1="249.5" y1="200" x2="249.5" y2="300" stroke="white" stroke-opacity="0.15" stroke-dasharray="4 4"/>
+<line x1="299" y1="250.5" x2="199" y2="250.5" stroke="white" stroke-opacity="0.15" stroke-dasharray="4 4"/>
+<line x1="284.705" y1="214.998" x2="213.994" y2="285.709" stroke="white" stroke-opacity="0.15" stroke-dasharray="4 4"/>
+<line x1="283.998" y1="285.709" x2="213.287" y2="214.999" stroke="white" stroke-opacity="0.15" stroke-dasharray="4 4"/>
+<line x1="469" y1="250.5" x2="299" y2="250.5" stroke="white" stroke-opacity="0.15" stroke-dasharray="4 4"/>
+<line y1="-0.5" x2="100" y2="-0.5" transform="matrix(0 1 1 0 923 200)" stroke="white" stroke-opacity="0.15" stroke-dasharray="4 4"/>
+<line y1="-0.5" x2="100" y2="-0.5" transform="matrix(1 -8.74228e-08 -8.74228e-08 -1 873 250)" stroke="white" stroke-opacity="0.15" stroke-dasharray="4 4"/>
+<line y1="-0.5" x2="100" y2="-0.5" transform="matrix(0.707107 0.707107 0.707107 -0.707107 887.648 214.644)" stroke="white" stroke-opacity="0.15" stroke-dasharray="4 4"/>
+<line y1="-0.5" x2="100" y2="-0.5" transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 887.648 285.356)" stroke="white" stroke-opacity="0.15" stroke-dasharray="4 4"/>
+<line y1="-0.5" x2="170" y2="-0.5" transform="matrix(1 8.74228e-08 8.74228e-08 -1 703 250)" stroke="white" stroke-opacity="0.15" stroke-dasharray="4 4"/>
+</svg>

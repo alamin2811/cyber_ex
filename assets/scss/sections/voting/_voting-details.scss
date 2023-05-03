@@ -1,0 +1,162 @@
+.voting-details-content {
+    padding-right: 20px;
+    .voting-title {
+        @include textStyle(36px, 600, 40px);
+        margin-bottom: 24px;
+    }
+}
+
+.cast-your-vote-card{
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(2.5px);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 55px;
+    margin-top: 42px;
+    .cast-vote-card-title{
+        padding: 21px 30px;
+    }
+    
+    .cast-card-option{
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(2.5px);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .cast-card-radio-btn{
+            width: 50%;
+            padding: 18px 20px;
+            cursor: pointer;
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+            &:nth-last-child(1){
+                border-right: none;
+            }
+            &.active, 
+            &:hover{
+                background: rgba(255, 255, 255, 0.04);
+                backdrop-filter: blur(2.5px);
+            }
+        }
+    }
+    
+    .submit-btn{
+        margin: 30px;
+        height: 60px;
+        width: 170px;
+        border-radius: 30px;
+        padding: 18px;
+        overflow: hidden;
+        background: color(themeGreen);
+        .btn-hov-section {
+            height: 28px;
+            overflow: hidden;
+            position: relative;
+        }
+        &:hover {
+            .btn-text {
+                animation: btnHovEffectBig 200ms linear;
+                transform: translateY(-60%);
+            }
+        }
+        .btn-text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            overflow: hidden;
+            gap: 10px;
+        }
+    }
+}
+
+.custom-checkbox{
+    &.cast-card-radio-btn{
+        input{
+            height: 24px;
+            width: 24px;
+            border-radius: 50%;
+            &:checked{
+                background: color(themeGreen);
+                &::before{
+                    background-image: url("../images/icon/check-black.svg");
+                }
+            }
+        }
+    }
+}
+
+.voting-details-right-card{
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(2.5px);
+    border-radius: 20px;
+}
+.voting-details-progress{
+    margin-bottom: 21px;
+    &:nth-last-child(1){
+        margin-bottom: 0px;
+    }
+    p{
+        margin-bottom: 4px;
+    }
+    .progress-bg{
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 4px;
+        height: 8px;
+        width: 100%;
+        overflow: hidden;
+        .progress-inner{
+            height: 100%;
+            &.for{
+                background: rgba(0, 227, 124, 0.5);
+            }
+            &.against{
+                background: rgba(243, 19, 19, 0.5);
+            }
+            &.abstain{
+                background: rgba(255, 255, 255, 0.5);
+            }
+            &.progress-85{
+                width: 85%;
+            }
+            &.progress-3{
+                width: 3%;
+            }
+            &.progress-12{
+                width: 12%;
+            }
+        }
+    }
+}
+
+.voting-right-info{
+    margin-bottom: 15px;
+    ul{
+        li{
+            span{
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.voting-details-table{
+    table{
+        tr{
+            td{
+                padding: 18px 0px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                &:nth-child(1){
+                    width: 40%;
+                }
+                &:nth-child(2){
+                    width: 20%;
+                    text-align: center;
+                }
+                &:nth-last-child(1){
+                    width: 40%;
+                    text-align: right;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,70 @@
+.breadcumbs-section{
+    background: url(../images/breadcumbs/breadcumbs-bg.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0px;
+}
+.breadcumbs-left{
+    .breadcumbs-link{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+        a{
+            @include textStyle(18px, 500, 60px);
+            color: rgba(255, 255, 255, 0.8);
+            position: relative;
+            margin-bottom: 0px;
+            &::after{
+                content: ".";
+                position: absolute;
+                right: -12px;
+                bottom: 0px;
+            }
+            &:nth-last-child(1){
+                color: color(whiteColor);
+                &::after{
+                    display: none;
+                }
+            }
+        }
+    }
+    .breadcumbs-title {
+        @include textStyle(40px, 600, 60px);
+        margin-bottom: 0px;
+    }
+}
+
+.breadcumbs-right{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+.breadcumbs-search-form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 370px;
+    margin-left: auto;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    width: 100%;
+    padding: 0px 21px;
+    input{
+        width: 82%;
+        outline: none;
+        border: none;
+        background: transparent;
+        padding: 14px 0px;
+        @include textStyle(15px, 500, 20px);
+        color: color(whiteColor);
+    }
+    button{
+        border: none;
+        outline: none;
+        background: transparent;
+    }
+}

@@ -1,0 +1,26 @@
+.pagination-section{
+    max-width: 350px;
+    width: 100%;
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        li{
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                border-radius: 25px;
+                height: 50px;
+                width: 50px;
+                &.active, 
+                &:hover{
+                    background: rgba(255, 255, 255, 0.1);
+                    color: color(primary);
+                }
+            }
+        }
+    }
+}

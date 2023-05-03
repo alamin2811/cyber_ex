@@ -1,0 +1,85 @@
+.banner-section{
+    background: url(../images/bg/bg-img.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    .banner-shape{
+        position: fixed;
+        right: 0px;
+        top: 0px;
+    }
+    .overlay{
+        background: url(../images/bg/bg-overlay.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+        .overlay2{
+            background: linear-gradient(180deg, #0D0D1F 0%, rgba(13, 13, 31, 0.9) 50.52%, #0D0D1F 100%);
+            min-height: 100vh;
+            width: 100%;
+        }
+    }
+}
+.banner-btns{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    button.nav-link{
+        @include textStyle(18px, 500, 24px);
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+        border-radius: 20px !important;
+        padding: 8px 21px;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 13px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        transition: 0.3s;
+        &::before{
+            content: '';
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        &.active,
+        &:hover{
+            background: rgba(255, 255, 255, 0.15) !important;
+            border-radius: 20px !important;
+            &::before{
+                background: #06D0E7 !important;
+            }
+        }
+    }
+}
+.page-title{
+    margin-bottom: 33px;
+}
+.banner-pragraph{
+    @include textStyle(18px, 500, 36px);
+    color: color(whiteColor);
+    max-width: 527px;
+}
+
+.text-list{
+    ul{
+        li{
+            color: color(whiteColor);
+            i{
+                margin-right: 8px;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+.banner-right{
+    max-width: 520px;
+    margin: auto;
+}

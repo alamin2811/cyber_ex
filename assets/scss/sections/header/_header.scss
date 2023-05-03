@@ -1,0 +1,64 @@
+.header-section{
+    background: rgba(255, 255, 255, 0.05);
+    position: fixed;
+    padding: 20px 0px;
+    top: 0px;
+    width: 100%;
+    left: 0px;
+    z-index: 999
+    ;
+}
+.header-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo{
+        width: 241px;
+    }
+    .connect-btn{
+        width: 170px;
+        font-weight: 600;
+font-size: 15px;
+line-height: 26px;
+/* identical to box height, or 173% */
+
+text-transform: uppercase;
+
+color: #FFFFFF;
+height: 45px;
+    }
+}
+.menu-lust{
+    max-width: 266px;
+    width: 100%;
+    margin: auto;
+    ul{
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        li{
+            a{
+                text-transform: uppercase;
+                // font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 26px;
+/* identical to box height, or 173% */
+
+text-align: center;
+text-transform: uppercase;
+
+color: #ffffff;
+&:hover, 
+&.active{
+    color: #0AC6D4;
+}
+            }
+        }
+    }
+}

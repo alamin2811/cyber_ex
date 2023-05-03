@@ -1,0 +1,74 @@
+.primary-btn{
+    background: linear-gradient(90deg, #3326B1 0%, #0AC6D4 100%);
+    border-radius: 8px;
+    color: color(whiteColor);
+    font-weight: 700;
+    overflow: hidden;
+    .btn-text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    &:hover{
+        color: color(whiteColor);
+    }
+}
+.primary-btn-lg{
+    background: linear-gradient(90deg, #3326B1 0%, #0AC6D4 100%);
+    border-radius: 8px;
+    color: color(whiteColor);
+    font-weight: 700;
+    overflow: hidden;
+    .btn-text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    &:hover{
+        color: color(whiteColor);
+    }
+}
+.outline-btn{
+    padding: 8px 22px;
+    border-radius: 50px;
+    font-weight: 700;
+    .btn-text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    &.text-green{
+        color: color(themeGreen);
+        &:hover{
+            color: color(themeGreen);
+        }
+    }
+    &.color-primary{
+        &:hover{
+            color: color(primary);
+        }
+    }
+    &.bg-green{
+        color: color(themeGreen);
+    }
+    &.border-green{
+        border: 2px solid color(themeGreen);
+    }
+    &.border-green20{
+        border: 2px solid color(themeGreen20);
+    }
+    &.border-primary20{
+        border: 2px solid color(primary20);
+    }
+    &.bg-transparent{
+        background: transparent;
+    }
+}
+
+// @keyframes btnHover {
+//     from {background-color: red;}
+//     to {background-color: yellow;}
+//   }

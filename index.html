@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exon - Home</title>
+
+    <!-- favicon included here -->
+    <link rel="shortcut icon" href="./assets/images/logo/fevicon.svg" type="image/x-icon">
+
+    <!-- apple touch icon included here -->
+    <link rel="apple-touch-icon" href="./assets/images/logo/fevicon.svg">
+
+    <!-- All css files included here -->
+    <!-- Bootstrap  v5.2.1 css -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- slick slider css -->
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="./assets/css/slick-theme.css">
+    <!-- Nice Select css -->
+    <link rel="stylesheet" href="./assets/css/niceCountryInput.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+    <!-- Header Section Start -->
+    <section class="header-section">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo"><img src="./assets/images/logo/logo.png" alt="logo"></a>
+                <div class="menu-lust">
+                    <ul>
+                        <li><a href="#" class="active">swap</a></li>
+                        <li><a href="#">farming</a></li>
+                        <li><a href="#">staking</a></li>
+                    </ul>
+                </div>
+                <button class="connect-btn primary-btn">Connect Wallet</button>
+            </div>
+        </div>
+    </section>
+    <!-- Header Section End -->
+    
+    <!-- Banner Section Start -->
+    <section class="banner-section">
+        <div class="banner-shape">
+            <img src="./assets/images/shape/banner-shape.png" alt="shape">
+        </div>
+        <div class="overlay">
+            <div class="overlay2 uig-pb-120 uig-pt-165 uig-md-pb-80 uig-md-pt-120">
+                <div class="container">
+                    <!-- <div class="row">
+                        <div class="col-lg-6">
+                            <div class="banner-left uig-pt-50">
+                                <div class="banner-btn-section uig-mb-37">
+                                    <ul class="custom-ul nav nav-pills banner-btns" id="pills-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link uppercase active" id="SwapTabLink" data-bs-toggle="pill" data-bs-target="#SwapTab" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Swap</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link uppercase" id="BridgeTabLink" data-bs-toggle="pill" data-bs-target="#BridgeTab" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Bridge</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link uppercase" id="LiquidityTabLink" data-bs-toggle="pill" data-bs-target="#LiquidityTab" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Liquidity</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h1 class="page-title uppercase">Web <span class="text-green">3.0</span> <span class="text-transform-none">DeFi</span> Multichain Trading Platform</h1>
+                                <p class="banner-pragraph uig-mb-21">The new era of the lowest exchange fee, profitable features & Multi-coin exchange web app</p>
+                                <div class="text-list">
+                                    <ul class="custom-ul">
+                                        <li><i class="fa-solid fa-check"></i>Trade anything & anywhere</li>
+                                        <li><i class="fa-solid fa-check"></i>Store and manage digital assets</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 tab-content">
+                            <div class="tab-pane fade show active" id="SwapTab" role="tabpanel" aria-labelledby="SwapTabLink">
+                                <div class="banner-right">
+                                    <div class="swap-token-section">
+                                        <div class="swap-token-content">
+                                            <div class="swap-token-market">
+                                                <div class="swap-item uig-mb-16">
+                                                    <div class="swap-item-left">
+                                                        <label>From</label>
+                                                        <div id="select-token-from" class="select-token-item">
+                                                            <button type="button" class="select-token-btn">
+                                                                <img src="./assets/images/coins/usdt.png" alt="coin-img">
+                                                                <span>USDT</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swap-item-right">
+                                                        <p>Balance: 1220.45</p>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" name="price-from" value="0.00" placeholder="0.00">
+                                                            <button class="input-group-text">Max</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="convert-item text-center uig-mb-16">
+                                                    <button class="swap-btn">
+                                                        <img src="./assets/images/icon/convert.svg" alt="swap">
+                                                    </button>
+                                                </div>
+                                                <div class="swap-item uig-mb-30">
+                                                    <div class="swap-item-left">
+                                                        <label>To (estimated)</label>
+                                                        <div id="select-token-to" class="select-token-item">
+                                                            <button type="button" class="select-token-btn">
+                                                                <img src="./assets/images/coins/eth.png" alt="coin-img">
+                                                                <span>ETH</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swap-item-right">
+                                                        <p>Balance: 0.54</p>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" name="price-from" value="0.00" placeholder="0.00">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <ul class="custom-ul swap-token-info uig-mb-30 uig-mt-30">
+                                                    <li>
+                                                        <p>Price: 1746.2 USDT per ETH</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Maximum sold : 176100 USDT</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Price Impact : <span class="color-primary">32.94%</span></p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Liquidity Provider Fee : 1579 USDT</p>
+                                                    </li>
+                                                </ul>
+                                                <a href="#" class="primary-btn-lg w-100 uppercase flex align-center justify-center">
+                                                    <span class="btn-hov-section">
+                                                        <span class="btn-text">
+                                                            <span>Swap Token</span>
+                                                            <span>Swap Token</span>
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swap-card-shadow swap-card-shadow1">
+                                        <div class="swap-card-shadow-content"></div>
+                                    </div>
+                                    <div class="swap-card-shadow swap-card-shadow2">
+                                        <div class="swap-card-shadow-content"></div>
+                                    </div>
+                                    <div class="swap-coin swap-coin1">
+                                        <img src="./assets/images/coins/coin_3.png" alt="coin icon" />
+                                    </div>
+                                    <div class="swap-coin swap-coin2">
+                                        <img src="./assets/images/coins/coin_1.png" alt="coin icon" />
+                                    </div>
+                                    <div class="swap-coin swap-coin3">
+                                        <img src="./assets/images/coins/coin_2.png" alt="coin icon" />
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="tab-pane fade" id="BridgeTab" role="tabpanel" aria-labelledby="BridgeTabLink">
+                                <div class="banner-right">
+                                    <div class="swap-token-section">
+                                        <div class="swap-token-content">
+                                            <div class="swap-token-market">
+                                                <div class="swap-item uig-mb-16">
+                                                    <div class="swap-item-left">
+                                                        <label>From</label>
+                                                        <div id="select-token-from" class="select-token-item">
+                                                            <button type="button" class="select-token-btn">
+                                                                <img src="./assets/images/coins/usdt.png" alt="coin-img">
+                                                                <span>USDT</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swap-item-right">
+                                                        <p>Balance: 1220.45</p>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" name="price-from" value="0.00" placeholder="0.00">
+                                                            <button class="input-group-text">Max</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="convert-item text-center uig-mb-16">
+                                                    <button class="swap-btn">
+                                                        <img src="./assets/images/icon/convert.svg" alt="swap">
+                                                    </button>
+                                                </div>
+                                                <div class="swap-item uig-mb-30">
+                                                    <div class="swap-item-left">
+                                                        <label>To (estimated)</label>
+                                                        <div id="select-token-to" class="select-token-item">
+                                                            <button type="button" class="select-token-btn">
+                                                                <img src="./assets/images/coins/eth.png" alt="coin-img">
+                                                                <span>ETH</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swap-item-right">
+                                                        <p>Balance: 0.54</p>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" name="price-from" value="0.00" placeholder="0.00">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <ul class="custom-ul swap-token-info uig-mb-30 uig-mt-30">
+                                                    <li>
+                                                        <p>Crosschain Fee : 0.00 %, Gas fee 0.00 BNB</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Bridge Rate : 1 LTC on ≈ 1.0000004768371582 LTC</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Minimum Received : <span class="color-primary">0.00 USDT</span></p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Estimated Time of Arrival : 5-20 minutes</p>
+                                                    </li>
+                                                </ul>
+                                                <a href="#" class="primary-btn-lg w-100 uppercase flex align-center justify-center">
+                                                    <span class="btn-hov-section">
+                                                        <span class="btn-text">
+                                                            <span>Transfer</span>
+                                                            <span>Transfer</span>
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swap-card-shadow swap-card-shadow1">
+                                        <div class="swap-card-shadow-content"></div>
+                                    </div>
+                                    <div class="swap-card-shadow swap-card-shadow2">
+                                        <div class="swap-card-shadow-content"></div>
+                                    </div>
+                                    <div class="swap-coin swap-coin1">
+                                        <img src="./assets/images/coins/coin_3.png" alt="coin icon" />
+                                    </div>
+                                    <div class="swap-coin swap-coin2">
+                                        <img src="./assets/images/coins/coin_1.png" alt="coin icon" />
+                                    </div>
+                                    <div class="swap-coin swap-coin3">
+                                        <img src="./assets/images/coins/coin_2.png" alt="coin icon" />
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="tab-pane fade" id="LiquidityTab" role="tabpanel" aria-labelledby="LiquidityTabLink">
+                                <div class="banner-right">
+                                    <div class="swap-token-section">
+                                        <div class="swap-token-content">
+                                            <div class="swap-token-market">
+                                                <div class="swap-item uig-mb-16">
+                                                    <div class="swap-item-left">
+                                                        <label>From</label>
+                                                        <div id="select-token-from" class="select-token-item">
+                                                            <button type="button" class="select-token-btn">
+                                                                <img src="./assets/images/coins/usdt.png" alt="coin-img">
+                                                                <span>USDT</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swap-item-right">
+                                                        <p>Balance: 1220.45</p>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" name="price-from" value="0.00" placeholder="0.00">
+                                                            <button class="input-group-text">Max</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="convert-item text-center uig-mb-16">
+                                                    <button class="swap-btn">
+                                                        <img src="./assets/images/icon/convert.svg" alt="swap">
+                                                    </button>
+                                                </div>
+                                                <div class="swap-item uig-mb-30">
+                                                    <div class="swap-item-left">
+                                                        <label>To (estimated)</label>
+                                                        <div id="select-token-to" class="select-token-item">
+                                                            <button type="button" class="select-token-btn">
+                                                                <img src="./assets/images/coins/eth.png" alt="coin-img">
+                                                                <span>ETH</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swap-item-right">
+                                                        <p>Balance: 0.54</p>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" name="price-from" value="0.00" placeholder="0.00">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <ul class="custom-ul swap-token-info uig-mb-30 uig-mt-30">
+                                                    <li>
+                                                        <p>458.56 USDT / BNB</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>0.025 BNB / USDT</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>53.52% Share of Pool</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Liquidity Provider Fee : 1579 USDT</p>
+                                                    </li>
+                                                    
+                                                </ul>
+                                                <a href="#" class="primary-btn-lg w-100 uppercase flex align-center justify-center">
+                                                    <span class="btn-hov-section">
+                                                        <span class="btn-text">
+                                                            <span>Supply</span>
+                                                            <span>Supply</span>
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swap-card-shadow swap-card-shadow1">
+                                        <div class="swap-card-shadow-content"></div>
+                                    </div>
+                                    <div class="swap-card-shadow swap-card-shadow2">
+                                        <div class="swap-card-shadow-content"></div>
+                                    </div>
+                                    <div class="swap-coin swap-coin1">
+                                        <img src="./assets/images/coins/coin_3.png" alt="coin icon" />
+                                    </div>
+                                    <div class="swap-coin swap-coin2">
+                                        <img src="./assets/images/coins/coin_1.png" alt="coin icon" />
+                                    </div>
+                                    <div class="swap-coin swap-coin3">
+                                        <img src="./assets/images/coins/coin_2.png" alt="coin icon" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+    
+                    <div class="banner-right">
+                        <div class="swap-token-section">
+                            <div class="swap-token-content">
+                                <div class="swap-token-market">
+                                    <div class="swap-item uig-mb-16">
+                                        <div class="swap-item-left">
+                                            <label>From</label>
+                                            <div id="select-token-from" class="select-token-item">
+                                                <button type="button" class="select-token-btn">
+                                                    <img src="./assets/images/coins/usdt.png" alt="coin-img">
+                                                    <span>USDT</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="swap-item-right">
+                                            <p>Balance: 1220.45</p>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" name="price-from" value="0.00" placeholder="0.00">
+                                                <button class="input-group-text">Max</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="convert-item text-center uig-mb-16">
+                                        <button class="swap-btn">
+                                            <img src="./assets/images/icon/convert.svg" alt="swap">
+                                        </button>
+                                    </div>
+                                    <div class="swap-item uig-mb-30">
+                                        <div class="swap-item-left">
+                                            <label>To (estimated)</label>
+                                            <div id="select-token-to" class="select-token-item">
+                                                <button type="button" class="select-token-btn">
+                                                    <img src="./assets/images/coins/eth.png" alt="coin-img">
+                                                    <span>ETH</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="swap-item-right">
+                                            <p>Balance: 0.54</p>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" name="price-from" value="0.00" placeholder="0.00">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <a href="#" class="primary-btn-lg w-100 uppercase flex align-center justify-center">
+                                        <span class="btn-hov-section">
+                                            <span class="btn-text">
+                                                <span>Swap</span>
+                                                <span>Swap</span>
+                                            </span>
+                                        </span>
+                                    </a>
+
+                                    <ul class="custom-ul swap-token-info uig-mb-30 uig-mt-30">
+                                        <li>
+                                            <p>Price: 1746.2 USDT per ETH</p>
+                                        </li>
+                                        <li>
+                                            <p>Maximum sold : 176100 USDT</p>
+                                        </li>
+                                        <li>
+                                            <p>Price Impact : <span class="color-primary">32.94%</span></p>
+                                        </li>
+                                        <li>
+                                            <p>Liquidity Provider Fee : 1579 USDT</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner Section End -->
+    
+    
+    
+    <!-- select token modal start -->
+    <div class="modal fade theme-modal theme-modal-v2" id="select-token-modal" tabindex="-1" aria-labelledby="select-token-modal-label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="select-token-modal-label">
+                        Select a token
+                    </h5>
+                    <button type="button" data-bs-dismiss="modal" aria-label="Close">
+                        <span class="iconify" data-icon="eva:close-fill"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="/" method="post">
+                        <div class="input-group select-token-search mb-15">
+                            <button type="button" id="button-addon2">
+                                <span class="iconify" data-icon="ri:search-line"></span>
+                            </button>
+                            <input type="text" class="form-control" name="token-search" id="token-search" placeholder="Search token or paste address" aria-describedby="button-addon2">
+                        </div>
+                    </form>
+                    <ul id="select-token-list" class="token-list active uig-mb-15 custom-ul">
+                        <li>
+                            <a href="#" class="list-item">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/coins/bitcoin.svg" alt="coin-img">
+                                    <span class="list-item-text"><span class="coin-text">BTC</span>(Bitcoin)</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <span>1.58</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-item">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/coins/ethereum.svg" alt="coin-img">
+                                    <span class="list-item-text"><span class="coin-text">ETH</span>(Ethereum)</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <span>23.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-item">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/coins/dai.svg" alt="coin-img">
+                                    <span class="list-item-text"><span class="coin-text">DAI</span>(Dai)</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <span>0.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-item">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/coins/tether.svg" alt="coin-img">
+                                    <span class="list-item-text"><span class="coin-text">USDT</span>(Tether)</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <span>578.90</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-item">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/coins/sandbox.svg" alt="coin-img">
+                                    <span class="list-item-text"><span class="coin-text">SAND</span>(The Sandbox)</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <span>75.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-item">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/coins/aave.svg" alt="coin-img">
+                                    <span class="list-item-text"><span class="coin-text">AAVE</span>(Aave)</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <span>0.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-item">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/coins/avalanche.svg" alt="coin-img">
+                                    <span class="list-item-text"><span class="coin-text">AVAX</span>(Avalanche)</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <span>0.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-item">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/coins/tether.svg" alt="coin-img">
+                                    <span class="list-item-text"><span class="coin-text">USDT</span>(Tether)</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <span>578.90</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-item">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/coins/ethereum.svg" alt="coin-img">
+                                    <span class="list-item-text"><span class="coin-text">ETH</span>(Ethereum)</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <span>23.00</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul id="select-token-list2" class="token-list uig-mb-15">
+                        <li>
+                            <a href="#" class="list-item">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/coins/bitcoin.svg" alt="coin-img">
+                                    <span class="list-item-text"><span class="coin-text">BTC</span>(Bitcoin)</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <span>1.58</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-item">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/coins/ethereum.svg" alt="coin-img">
+                                    <span class="list-item-text"><span class="coin-text">ETH</span>(Ethereum)</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <span>23.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-item">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/coins/dai.svg" alt="coin-img">
+                                    <span class="list-item-text"><span class="coin-text">DAI</span>(Dai)</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <span>0.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-item">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/coins/tether.svg" alt="coin-img">
+                                    <span class="list-item-text"><span class="coin-text">USDT</span>(Tether)</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <span>578.90</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-item">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/coins/sandbox.svg" alt="coin-img">
+                                    <span class="list-item-text"><span class="coin-text">SAND</span>(The Sandbox)</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <span>75.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-item">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/coins/aave.svg" alt="coin-img">
+                                    <span class="list-item-text"><span class="coin-text">AAVE</span>(Aave)</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <span>0.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-item">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/coins/avalanche.svg" alt="coin-img">
+                                    <span class="list-item-text"><span class="coin-text">AVAX</span>(Avalanche)</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <span>0.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-item">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/coins/tether.svg" alt="coin-img">
+                                    <span class="list-item-text"><span class="coin-text">USDT</span>(Tether)</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <span>578.90</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-item">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/coins/ethereum.svg" alt="coin-img">
+                                    <span class="list-item-text"><span class="coin-text">ETH</span>(Ethereum)</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <span>23.00</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul id="select-token-list3" class="token-list uig-mb-15">
+                        <li>
+                            <a href="#" class="list-item">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/coins/bitcoin.svg" alt="coin-img">
+                                    <span class="list-item-text"><span class="coin-text">BTC</span>(Bitcoin)</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <span>1.58</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-item">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/coins/ethereum.svg" alt="coin-img">
+                                    <span class="list-item-text"><span class="coin-text">ETH</span>(Ethereum)</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <span>23.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-item">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/coins/dai.svg" alt="coin-img">
+                                    <span class="list-item-text"><span class="coin-text">DAI</span>(Dai)</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <span>0.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-item">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/coins/tether.svg" alt="coin-img">
+                                    <span class="list-item-text"><span class="coin-text">USDT</span>(Tether)</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <span>578.90</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-item">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/coins/sandbox.svg" alt="coin-img">
+                                    <span class="list-item-text"><span class="coin-text">SAND</span>(The Sandbox)</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <span>75.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-item">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/coins/aave.svg" alt="coin-img">
+                                    <span class="list-item-text"><span class="coin-text">AAVE</span>(Aave)</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <span>0.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-item">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/coins/avalanche.svg" alt="coin-img">
+                                    <span class="list-item-text"><span class="coin-text">AVAX</span>(Avalanche)</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <span>0.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-item">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/coins/tether.svg" alt="coin-img">
+                                    <span class="list-item-text"><span class="coin-text">USDT</span>(Tether)</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <span>578.90</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-item">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/coins/ethereum.svg" alt="coin-img">
+                                    <span class="list-item-text"><span class="coin-text">ETH</span>(Ethereum)</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <span>23.00</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul id="select-token-list4" class="token-list uig-mb-15">
+                        <li>
+                            <a href="#" class="list-item">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/coins/bitcoin.svg" alt="coin-img">
+                                    <span class="list-item-text"><span class="coin-text">BTC</span>(Bitcoin)</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <span>1.58</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-item">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/coins/ethereum.svg" alt="coin-img">
+                                    <span class="list-item-text"><span class="coin-text">ETH</span>(Ethereum)</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <span>23.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-item">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/coins/dai.svg" alt="coin-img">
+                                    <span class="list-item-text"><span class="coin-text">DAI</span>(Dai)</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <span>0.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-item">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/coins/tether.svg" alt="coin-img">
+                                    <span class="list-item-text"><span class="coin-text">USDT</span>(Tether)</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <span>578.90</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-item">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/coins/sandbox.svg" alt="coin-img">
+                                    <span class="list-item-text"><span class="coin-text">SAND</span>(The Sandbox)</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <span>75.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-item">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/coins/aave.svg" alt="coin-img">
+                                    <span class="list-item-text"><span class="coin-text">AAVE</span>(Aave)</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <span>0.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-item">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/coins/avalanche.svg" alt="coin-img">
+                                    <span class="list-item-text"><span class="coin-text">AVAX</span>(Avalanche)</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <span>0.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-item">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/coins/tether.svg" alt="coin-img">
+                                    <span class="list-item-text"><span class="coin-text">USDT</span>(Tether)</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <span>578.90</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="list-item">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/coins/ethereum.svg" alt="coin-img">
+                                    <span class="list-item-text"><span class="coin-text">ETH</span>(Ethereum)</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <span>23.00</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="manage-token-btn">Manage Tokens</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- select token modal end -->
+    
+    <!-- connect wallet modal start -->
+    <div class="modal fade theme-modal" id="connect-wallet-modal" tabindex="-1"
+        aria-labelledby="connect-wallet-modal-label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="connect-wallet-modal-label">
+                        Connect Wallet
+                    </h5>
+                    <button type="button" data-bs-dismiss="modal" aria-label="Close">
+                        <span class="iconify" data-icon="eva:close-fill"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Choose how you want to connect. There are several wallet providers.</p>
+                    <ul class="wallet-list custom-ul">
+                        <li>
+                            <a href="#" data-bs-dismiss="modal" aria-label="Close" class="list-item connect-meta">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/wallet/metamask.svg" alt="wallet-img">
+                                    <span>MetaMask</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <img src="./assets/images/icon/arrow-right.svg" alt="icon">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-bs-dismiss="modal" aria-label="Close" class="list-item">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/wallet/formatic.png" alt="wallet-img">
+                                    <span>Formatic</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <img src="./assets/images/icon/arrow-right.svg" alt="icon">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-bs-dismiss="modal" aria-label="Close" class="list-item">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/wallet/trust-wallet.svg" alt="wallet-img">
+                                    <span>Trust Wallet</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <img src="./assets/images/icon/arrow-right.svg" alt="icon">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-bs-dismiss="modal" aria-label="Close" class="list-item">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/wallet/wallet-connect.svg" alt="wallet-img">
+                                    <span>WalletConnect</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <img src="./assets/images/icon/arrow-right.svg" alt="icon">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-bs-dismiss="modal" aria-label="Close" class="list-item">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/wallet/phantom.png" alt="wallet-img">
+                                    <span>Phantom</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <img src="./assets/images/icon/arrow-right.svg" alt="icon">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- connect wallet modal end -->
+    
+    <!-- Download Metamask modal start -->
+    <div class="modal fade theme-modal" id="download-metamask" tabindex="-1"
+        aria-labelledby="connect-wallet-modal-label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="connect-wallet-modal-label">
+                        Connect Wallet
+                    </h5>
+                    <button type="button" data-bs-dismiss="modal" aria-label="Close">
+                        <span class="iconify" data-icon="eva:close-fill"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Please download & install metamask extension!</p>
+                    <ul class="wallet-list custom-ul">
+                        <li>
+                            <a href="https://metamask.io/download/" target="_blank" class="list-item connect-meta">
+                                <div class="list-item-left">
+                                    <img src="./assets/images/wallet/metamask.svg" alt="wallet-img">
+                                    <span>MetaMask</span>
+                                </div>
+                                <div class="list-item-right">
+                                    <img src="./assets/images/icon/arrow-right.svg" alt="icon">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Download Metamask modal end -->
+    
+    <!-- All javascript files included here -->
+    <!-- jQuery v3.6.1 js -->
+    <script src="./assets/js/jquery-3.6.1.min.js"></script>
+    <!-- Bootstrap  v5.2.1 js -->
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- Iconify v3.0.0 js -->
+    <script src="./assets/js/iconify.min.js"></script>
+    <!-- modernizr js -->
+    <script src="./assets/js/modernizr.js"></script>
+    <!-- slick slider js -->
+    <script src="./assets/js/slick.min.js"></script>    
+    <!-- nice Select js -->
+    <script src="./assets/js/niceCountryInput.js"></script>
+    <!-- Swap Token js -->
+    <script src="./assets/js/swap-token.js"></script>
+    <!-- Time Counter js -->
+    <script src="./assets/js/time-counter.js"></script>
+    <!-- Metamask Js -->
+    <script src="./assets/js/metamask.js"></script>
+    <script src="./assets/js/metamaskhandler.js"></script>
+    <script src="./assets/js/web3.min.js"></script>
+    <!-- custom js -->
+    <script src="./assets/js/main.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+.latest-news-card{
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 20px;
+    margin-bottom: 40px;
+    max-width: 370px;
+    width: 100%;
+    margin: auto;
+}
+.latest-news-info{
+    padding: 22px 29px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    .date{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 10px;
+        span{
+            margin-left: 10px;
+        }
+    }
+    h4{
+        margin-bottom: 0px;
+    }
+}
+.latest-news-card-bottom{
+    padding: 15px 29px;
+}
