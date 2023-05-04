@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exon - Home</title>
+
+    <!-- favicon included here -->
+    <link rel="shortcut icon" href="./assets/images/logo/fevicon.svg" type="image/x-icon">
+
+    <!-- apple touch icon included here -->
+    <link rel="apple-touch-icon" href="./assets/images/logo/fevicon.svg">
+
+    <!-- All css files included here -->
+    <!-- Bootstrap  v5.2.1 css -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- slick slider css -->
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="./assets/css/slick-theme.css">
+    <!-- Nice Select css -->
+    <link rel="stylesheet" href="./assets/css/niceCountryInput.css">
+    <link rel="stylesheet" href="./assets/css/nice-select.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- responsive css -->
+    <!-- <link rel="stylesheet" href="./assets/css/responsive.css"> -->
+</head>
+
+<body>
+    <!-- Header Section Start -->
+    <section class="header-section">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo"><img src="./assets/images/logo/logo.png" alt="logo"></a>
+                <div class="menu-lust">
+                    <ul>
+                        <li><a href="./index.html">swap</a></li>
+                        <li><a href="./farming.html" class="active">farming</a></li>
+                        <li><a href="./staking.html">staking</a></li>
+                    </ul>
+                </div>
+                <button class="connect-btn connect-btn1 primary-btn">Connect Wallet</button>
+                <div class="mobile-menu">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                        aria-controls="offcanvasNavbar" aria-label="Toggle navigation" fdprocessedid="7fbgmc">
+                        <span class="iconify" data-icon="fa6-solid:bars"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end mobile-menu-body" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <a href="./index.html" class="logo"><img src="./assets/images/logo/logo.png" alt="logo"></a>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><span class="iconify" data-icon="material-symbols:close-rounded"></span></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <ul class="mobile-menu-list">
+                                    <li><a href="./index.html" class="active">swap</a></li>
+                                    <li><a href="./farming.html">farming</a></li>
+                                    <li><a href="./staking.html">staking</a></li>
+                                    <li><button class="connect-btn primary-btn">Connect Wallet</button></li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Header Section End -->
+    
+    <!-- Banner Section Start -->
+    <section class="banner-section">
+        <div class="banner-shape">
+            <img src="./assets/images/shape/banner-shape.png" alt="shape">
+        </div>
+        <div class="overlay">
+            <div class="overlay2 uig-pt-160 uig-md-140-80">
+                <div class="container uig-md-pb-80 uig-pb-92">
+                    <!-- Breadcrumb section start -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="breadcrumb-content mb-25">
+                                <div class="item-left">
+                                    <h2>Farming</h2>
+                                    <p>The first and best APY farming in this planet</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Breadcrumb section end -->
+
+                <!-- Liquidity Farming Table Start -->
+                <div class="row">
+                    <div class="farming-table-btn-sections">
+                        <div class="farming-table-btn-content">
+                            <div class="farming-table-btns">
+                                <ul class="liquidity-tab-btns1">
+                                    <li><button class="liquidity-tablinks" onclick="openTab(event, 'Live')"
+                                            id="liquidity-tablinks-defaultOpen">Live (5)</button></li>
+                                    <li><button class="liquidity-tablinks"
+                                            onclick="openTab(event, 'Finished')">Finished (12)</button></li>
+                                </ul>
+                                <div class="farming-toggle-switch">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                    <strong>Staked Only</strong>
+                                </div>
+                            </div>
+
+                            <form action="/" method="post">
+                                <select name="farms" id="farms" class="select-dropdown select-list2">
+                                    <option value="all">All Farms</option>
+                                    <option value="liquidity">Liquidity</option>
+                                    <option value="apr">APR</option>
+                                    <option value="stable">Stable</option>
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="liquidity-tabcontentOne">
+                            <div id="Live" class="liquidity-tabcontent">
+                                <div class="liquidity-tabcontent-inner">
+                                    <div class="liquidity-pools-farming-table">
+                                        <div class="liquidity-pools-farming-table-body">
+                                            <div class="liquidity-pools-farming-table-row">
+                                                <div class="liquidity-pools-farming-table-row-bg">
+                                                    <div
+                                                        class="liquidity-pools-farming-table-collaps-btn collapsBtn">
+                                                        <ul>
+                                                            <li>
+                                                                <div class="liquidity-farmig-item-img">
+                                                                    <span class="img-1"><img
+                                                                            src="assets/images/liquidity/token6.png"
+                                                                            alt="img"
+                                                                            class="img-fluid" /></span>
+                                                                    <span class="img-2"><img
+                                                                            src="assets/images/liquidity/token6.2.png"
+                                                                            alt="img"
+                                                                            class="img-fluid" /></span>
+                                                                </div>
+                                                                <h5>LINK-EMC / LINK</h5>
+                                                            </li>
+                                                            <li><span>APY</span>42.55 %</li>
+                                                            <li><span>APR</span>23.99%</li>
+                                                            <li><span>Liquidity</span>$6 100 815</li>
+                                                            <li><span>Multiplier</span>152x</li>
+                                                            <li><span>Earned</span>--</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div
+                                                        class="liquidity-pools-farming-table-collaps-content collapsContent">
+                                                        <div
+                                                            class="liquidity-pools-farming-table-collaps-content-inner">
+                                                            <form>
+                                                                <ol class="list1">
+                                                                    <li>
+                                                                        <div class="liquidity-collaps-input-top">
+                                                                            <label>Deposit</label>
+                                                                            <h6>Your balance: 156 AAVE</h6>
+                                                                        </div>
+                                                                        <div
+                                                                            class="liquidity-collaps-input">
+                                                                            <input type="text" value="0.00">
+                                                                            <div
+                                                                                class="liquidity-collaps-input-btns">
+                                                                                <span>MAX</span>
+                                                                                <button class="approve"
+                                                                                    type="button">Approve</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <label>Pending Rewards</label>
+                                                                        <div class="pending-rewards-text">
+                                                                            <h4>2.23 AAVE</h4>
+                                                                            <button
+                                                                                class="claim">Claim</button>
+                                                                        </div>
+                                                                    </li>
+                                                                </ol>
+                                                                <a href="add-liquidity.html" class="add-liquidity-link">Add Liquidity &nbsp; +</a>
+                                                            </form>
+                                                            <div
+                                                                class="liquidity-pools-farming-table-collaps-footer">
+                                                                <a href="#">Get AAVE-HUSD<span><img
+                                                                            src="assets/images/icon/view-icon.svg"
+                                                                            alt="icon"
+                                                                            class="img-fluid" /></span></a>
+
+                                                                <a href="#">View Contract <span><img
+                                                                            src="assets/images/icon/view-icon.svg"
+                                                                            alt="icon"
+                                                                            class="img-fluid" /></span></a>
+
+                                                                <a href="#">Unstaking Fee <span><img
+                                                                            src="assets/images/icon/info-circle.svg"
+                                                                            alt="icon"
+                                                                            class="img-fluid" /></span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="liquidity-pools-farming-table-row">
+                                                <div class="liquidity-pools-farming-table-row-bg">
+                                                    <div
+                                                        class="liquidity-pools-farming-table-collaps-btn collapsBtn">
+                                                        <ul>
+                                                            <li>
+                                                                <div class="liquidity-farmig-item-img">
+                                                                    <span class="img-1"><img
+                                                                            src="assets/images/liquidity/token5.png"
+                                                                            alt="img"
+                                                                            class="img-fluid" /></span>
+                                                                    <span class="img-2"><img
+                                                                            src="assets/images/liquidity/husd.svg"
+                                                                            alt="img"
+                                                                            class="img-fluid" /></span>
+                                                                </div>
+                                                                <h5>AAVE-HUSD / AAVE</h5>
+                                                            </li>
+                                                            <li><span>APY</span> 8.22 %</li>
+                                                            <li><span>APR</span>53.00 %</li>
+                                                            <li><span>Liquidity</span>$25 256 333</li>
+                                                            <li><span>Multiplier</span>120x</li>
+                                                            <li><span>Earned</span>--</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div
+                                                        class="liquidity-pools-farming-table-collaps-content collapsContent">
+                                                        <div
+                                                            class="liquidity-pools-farming-table-collaps-content-inner">
+                                                            <form>
+                                                                <ol class="list1">
+                                                                    <li>
+                                                                        <div class="liquidity-collaps-input-top">
+                                                                            <label>Deposit</label>
+                                                                            <h6>Your balance: 156 AAVE</h6>
+                                                                        </div>
+                                                                        <div
+                                                                            class="liquidity-collaps-input">
+                                                                            <input type="text" value="0.00">
+                                                                            <div
+                                                                                class="liquidity-collaps-input-btns">
+                                                                                <span>MAX</span>
+                                                                                <button class="approve"
+                                                                                    type="button">Approve</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <label>Pending Rewards</label>
+                                                                        <div class="pending-rewards-text">
+                                                                            <h4>2.23 AAVE</h4>
+                                                                            <button
+                                                                                class="claim">Claim</button>
+                                                                        </div>
+                                                                    </li>
+                                                                </ol>
+                                                                <a href="add-liquidity.html" class="add-liquidity-link">Add Liquidity &nbsp; +</a>
+                                                            </form>
+                                                            <div
+                                                                class="liquidity-pools-farming-table-collaps-footer">
+                                                                <a href="#">Get AAVE-HUSD<span><img
+                                                                            src="assets/images/icon/view-icon.svg"
+                                                                            alt="icon"
+                                                                            class="img-fluid" /></span></a>
+
+                                                                <a href="#">View Contract <span><img
+                                                                            src="assets/images/icon/view-icon.svg"
+                                                                            alt="icon"
+                                                                            class="img-fluid" /></span></a>
+
+                                                                <a href="#">Unstaking Fee <span><img
+                                                                            src="assets/images/icon/info-circle.svg"
+                                                                            alt="icon"
+                                                                            class="img-fluid" /></span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="liquidity-pools-farming-table-row">
+                                                <div class="liquidity-pools-farming-table-row-bg">
+                                                    <div
+                                                        class="liquidity-pools-farming-table-collaps-btn collapsBtn">
+                                                        <ul>
+                                                            <li>
+                                                                <div class="liquidity-farmig-item-img">
+                                                                    <span class="img-1"><img
+                                                                            src="assets/images/liquidity/token3.png"
+                                                                            alt="img"
+                                                                            class="img-fluid" /></span>
+                                                                    <span class="img-2"><img
+                                                                            src="assets/images/liquidity/usdt.svg"
+                                                                            alt="img"
+                                                                            class="img-fluid" /></span>
+                                                                </div>
+                                                                <h5>MFT-USDT / MFT</h5>
+                                                            </li>
+                                                            <li><span>APY</span>62.03 %</li>
+                                                            <li><span>APR</span>9.00 %</li>
+                                                            <li><span>Liquidity</span>$800 213</li>
+                                                            <li><span>Multiplier</span>50x</li>
+                                                            <li><span>Earned</span>--</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div
+                                                        class="liquidity-pools-farming-table-collaps-content collapsContent">
+                                                        <div
+                                                            class="liquidity-pools-farming-table-collaps-content-inner">
+                                                            <form>
+                                                                <ol class="list1">
+                                                                    <li>
+                                                                        <div class="liquidity-collaps-input-top">
+                                                                            <label>Deposit</label>
+                                                                            <h6>Your balance: 156 AAVE</h6>
+                                                                        </div>
+                                                                        <div
+                                                                            class="liquidity-collaps-input">
+                                                                            <input type="text" value="0.00">
+                                                                            <div
+                                                                                class="liquidity-collaps-input-btns">
+                                                                                <span>MAX</span>
+                                                                                <button class="approve"
+                                                                                    type="button">Approve</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <label>Pending Rewards</label>
+                                                                        <div class="pending-rewards-text">
+                                                                            <h4>2.23 AAVE</h4>
+                                                                            <button
+                                                                                class="claim">Claim</button>
+                                                                        </div>
+                                                                    </li>
+                                                                </ol>
+                                                                <a href="add-liquidity.html" class="add-liquidity-link">Add Liquidity &nbsp; +</a>
+                                                            </form>
+                                                            <div
+                                                                class="liquidity-pools-farming-table-collaps-footer">
+                                                                <a href="#">Get AAVE-HUSD<span><img
+                                                                            src="assets/images/icon/view-icon.svg"
+                                                                            alt="icon"
+                                                                            class="img-fluid" /></span></a>
+
+                                                                <a href="#">View Contract <span><img
+                                                                            src="assets/images/icon/view-icon.svg"
+                                                                            alt="icon"
+                                                                            class="img-fluid" /></span></a>
+
+                                                                <a href="#">Unstaking Fee <span><img
+                                                                            src="assets/images/icon/info-circle.svg"
+                                                                            alt="icon"
+                                                                            class="img-fluid" /></span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="liquidity-pools-farming-table-row">
+                                                <div class="liquidity-pools-farming-table-row-bg">
+                                                    <div
+                                                        class="liquidity-pools-farming-table-collaps-btn collapsBtn">
+                                                        <ul>
+                                                            <li>
+                                                                <div class="liquidity-farmig-item-img">
+                                                                    <span class="img-1"><img
+                                                                            src="assets/images/liquidity/token6.2.png"
+                                                                            alt="img"
+                                                                            class="img-fluid" /></span>
+                                                                    <span class="img-2"><img
+                                                                            src="assets/images/liquidity/trx.svg"
+                                                                            alt="img"
+                                                                            class="img-fluid" /></span>
+                                                                </div>
+                                                                <h5>EMC-TRX / EMC</h5>
+                                                            </li>
+                                                            <li><span>APY</span>28.75 %</li>
+                                                            <li><span>APR</span>10.99 %</li>
+                                                            <li><span>Liquidity</span>$26 220 858</li>
+                                                            <li><span>Multiplier</span>152x</li>
+                                                            <li><span>Earned</span>--</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div
+                                                        class="liquidity-pools-farming-table-collaps-content collapsContent">
+                                                        <div
+                                                            class="liquidity-pools-farming-table-collaps-content-inner">
+                                                            <form>
+                                                                <ol class="list1">
+                                                                    <li>
+                                                                        <div class="liquidity-collaps-input-top">
+                                                                            <label>Deposit</label>
+                                                                            <h6>Your balance: 156 AAVE</h6>
+                                                                        </div>
+                                                                        <div
+                                                                            class="liquidity-collaps-input">
+                                                                            <input type="text" value="0.00">
+                                                                            <div
+                                                                                class="liquidity-collaps-input-btns">
+                                                                                <span>MAX</span>
+                                                                                <button class="approve"
+                                                                                    type="button">Approve</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <label>Pending Rewards</label>
+                                                                        <div class="pending-rewards-text">
+                                                                            <h4>2.23 AAVE</h4>
+                                                                            <button
+                                                                                class="claim">Claim</button>
+                                                                        </div>
+                                                                    </li>
+                                                                </ol>
+                                                                <a href="add-liquidity.html" class="add-liquidity-link">Add Liquidity &nbsp; +</a>
+                                                            </form>
+                                                            <div
+                                                                class="liquidity-pools-farming-table-collaps-footer">
+                                                                <a href="#">Get AAVE-HUSD<span><img
+                                                                            src="assets/images/icon/view-icon.svg"
+                                                                            alt="icon"
+                                                                            class="img-fluid" /></span></a>
+
+                                                                <a href="#">View Contract <span><img
+                                                                            src="assets/images/icon/view-icon.svg"
+                                                                            alt="icon"
+                                                                            class="img-fluid" /></span></a>
+
+                                                                <a href="#">Unstaking Fee <span><img
+                                                                            src="assets/images/icon/info-circle.svg"
+                                                                            alt="icon"
+                                                                            class="img-fluid" /></span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="Finished" class="liquidity-tabcontent">
+                                <div class="liquidity-tabcontent-inner">
+                                    <div class="liquidity-pools-farming-table">
+                                        <div class="liquidity-pools-farming-table-body">
+                                            <div class="liquidity-pools-farming-table-row">
+                                                <div class="liquidity-pools-farming-table-row-bg">
+                                                    <div
+                                                        class="liquidity-pools-farming-table-collaps-btn collapsBtn">
+                                                        <ul>
+                                                            <li>
+                                                                <div class="liquidity-farmig-item-img">
+                                                                    <span class="img-1"><img
+                                                                            src="assets/images/liquidity/token6.2.png"
+                                                                            alt="img"
+                                                                            class="img-fluid" /></span>
+                                                                    <span class="img-2"><img
+                                                                            src="assets/images/liquidity/trx.svg"
+                                                                            alt="img"
+                                                                            class="img-fluid" /></span>
+                                                                </div>
+                                                                <h5>EMC-TRX / EMC</h5>
+                                                            </li>
+                                                            <li><span>APY</span>28.75 %</li>
+                                                            <li><span>APR</span>10.99 %</li>
+                                                            <li><span>Liquidity</span>$26 220 858</li>
+                                                            <li><span>Multiplier</span>152x</li>
+                                                            <li><span>Earned</span>--</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div
+                                                        class="liquidity-pools-farming-table-collaps-content collapsContent">
+                                                        <div
+                                                            class="liquidity-pools-farming-table-collaps-content-inner">
+                                                            <form>
+                                                                <ol class="list1">
+                                                                    <li>
+                                                                        <div class="liquidity-collaps-input-top">
+                                                                            <label>Deposit</label>
+                                                                            <h6>Your balance: 156 AAVE</h6>
+                                                                        </div>
+                                                                        <div
+                                                                            class="liquidity-collaps-input">
+                                                                            <input type="text" value="0.00">
+                                                                            <div
+                                                                                class="liquidity-collaps-input-btns">
+                                                                                <span>MAX</span>
+                                                                                <button class="approve"
+                                                                                    type="button">Approve</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <label>Pending Rewards</label>
+                                                                        <div class="pending-rewards-text">
+                                                                            <h4>2.23 AAVE</h4>
+                                                                            <button
+                                                                                class="claim">Claim</button>
+                                                                        </div>
+                                                                    </li>
+                                                                </ol>
+                                                                <a href="add-liquidity.html" class="add-liquidity-link">Add Liquidity &nbsp; +</a>
+                                                            </form>
+                                                            <div
+                                                                class="liquidity-pools-farming-table-collaps-footer">
+                                                                <a href="#">Get AAVE-HUSD<span><img
+                                                                            src="assets/images/icon/view-icon.svg"
+                                                                            alt="icon"
+                                                                            class="img-fluid" /></span></a>
+
+                                                                <a href="#">View Contract <span><img
+                                                                            src="assets/images/icon/view-icon.svg"
+                                                                            alt="icon"
+                                                                            class="img-fluid" /></span></a>
+
+                                                                <a href="#">Unstaking Fee <span><img
+                                                                            src="assets/images/icon/info-circle.svg"
+                                                                            alt="icon"
+                                                                            class="img-fluid" /></span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="liquidity-pools-farming-table-row">
+                                                <div class="liquidity-pools-farming-table-row-bg">
+                                                    <div
+                                                        class="liquidity-pools-farming-table-collaps-btn collapsBtn">
+                                                        <ul>
+                                                            <li>
+                                                                <div class="liquidity-farmig-item-img">
+                                                                    <span class="img-1"><img
+                                                                            src="assets/images/liquidity/token5.png"
+                                                                            alt="img"
+                                                                            class="img-fluid" /></span>
+                                                                    <span class="img-2"><img
+                                                                            src="assets/images/liquidity/husd.svg"
+                                                                            alt="img"
+                                                                            class="img-fluid" /></span>
+                                                                </div>
+                                                                <h5>AAVE-HUSD / AAVE</h5>
+                                                            </li>
+                                                            <li><span>APY</span> 8.22 %</li>
+                                                            <li><span>APR</span>53.00 %</li>
+                                                            <li><span>Liquidity</span>$25 256 333</li>
+                                                            <li><span>Multiplier</span>120x</li>
+                                                            <li><span>Earned</span>--</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div
+                                                        class="liquidity-pools-farming-table-collaps-content collapsContent">
+                                                        <div
+                                                            class="liquidity-pools-farming-table-collaps-content-inner">
+                                                            <form>
+                                                                <ol class="list1">
+                                                                    <li>
+                                                                        <div class="liquidity-collaps-input-top">
+                                                                            <label>Deposit</label>
+                                                                            <h6>Your balance: 156 AAVE</h6>
+                                                                        </div>
+                                                                        <div
+                                                                            class="liquidity-collaps-input">
+                                                                            <input type="text" value="0.00">
+                                                                            <div
+                                                                                class="liquidity-collaps-input-btns">
+                                                                                <span>MAX</span>
+                                                                                <button class="approve"
+                                                                                    type="button">Approve</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <label>Pending Rewards</label>
+                                                                        <div class="pending-rewards-text">
+                                                                            <h4>2.23 AAVE</h4>
+                                                                            <button
+                                                                                class="claim">Claim</button>
+                                                                        </div>
+                                                                    </li>
+                                                                </ol>
+                                                                <a href="add-liquidity.html" class="add-liquidity-link">Add Liquidity &nbsp; +</a>
+                                                            </form>
+                                                            <div
+                                                                class="liquidity-pools-farming-table-collaps-footer">
+                                                                <a href="#">Get AAVE-HUSD<span><img
+                                                                            src="assets/images/icon/view-icon.svg"
+                                                                            alt="icon"
+                                                                            class="img-fluid" /></span></a>
+
+                                                                <a href="#">View Contract <span><img
+                                                                            src="assets/images/icon/view-icon.svg"
+                                                                            alt="icon"
+                                                                            class="img-fluid" /></span></a>
+
+                                                                <a href="#">Unstaking Fee <span><img
+                                                                            src="assets/images/icon/info-circle.svg"
+                                                                            alt="icon"
+                                                                            class="img-fluid" /></span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="liquidity-pools-farming-table-row">
+                                                <div class="liquidity-pools-farming-table-row-bg">
+                                                    <div
+                                                        class="liquidity-pools-farming-table-collaps-btn collapsBtn">
+                                                        <ul>
+                                                            <li>
+                                                                <div class="liquidity-farmig-item-img">
+                                                                    <span class="img-1"><img
+                                                                            src="assets/images/liquidity/token3.png"
+                                                                            alt="img"
+                                                                            class="img-fluid" /></span>
+                                                                    <span class="img-2"><img
+                                                                            src="assets/images/liquidity/usdt.svg"
+                                                                            alt="img"
+                                                                            class="img-fluid" /></span>
+                                                                </div>
+                                                                <h5>MFT-USDT / MFT</h5>
+                                                            </li>
+                                                            <li><span>APY</span>62.03 %</li>
+                                                            <li><span>APR</span>9.00 %</li>
+                                                            <li><span>Liquidity</span>$800 213</li>
+                                                            <li><span>Multiplier</span>50x</li>
+                                                            <li><span>Earned</span>--</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div
+                                                        class="liquidity-pools-farming-table-collaps-content collapsContent">
+                                                        <div
+                                                            class="liquidity-pools-farming-table-collaps-content-inner">
+                                                            <form>
+                                                                <ol class="list1">
+                                                                    <li>
+                                                                        <div class="liquidity-collaps-input-top">
+                                                                            <label>Deposit</label>
+                                                                            <h6>Your balance: 156 AAVE</h6>
+                                                                        </div>
+                                                                        <div
+                                                                            class="liquidity-collaps-input">
+                                                                            <input type="text" value="0.00">
+                                                                            <div
+                                                                                class="liquidity-collaps-input-btns">
+                                                                                <span>MAX</span>
+                                                                                <button class="approve"
+                                                                                    type="button">Approve</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <label>Pending Rewards</label>
+                                                                        <div class="pending-rewards-text">
+                                                                            <h4>2.23 AAVE</h4>
+                                                                            <button
+                                                                                class="claim">Claim</button>
+                                                                        </div>
+                                                                    </li>
+                                                                </ol>
+                                                                <a href="add-liquidity.html" class="add-liquidity-link">Add Liquidity &nbsp; +</a>
+                                                            </form>
+                                                            <div
+                                                                class="liquidity-pools-farming-table-collaps-footer">
+                                                                <a href="#">Get AAVE-HUSD<span><img
+                                                                            src="assets/images/icon/view-icon.svg"
+                                                                            alt="icon"
+                                                                            class="img-fluid" /></span></a>
+
+                                                                <a href="#">View Contract <span><img
+                                                                            src="assets/images/icon/view-icon.svg"
+                                                                            alt="icon"
+                                                                            class="img-fluid" /></span></a>
+
+                                                                <a href="#">Unstaking Fee <span><img
+                                                                            src="assets/images/icon/info-circle.svg"
+                                                                            alt="icon"
+                                                                            class="img-fluid" /></span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="liquidity-pools-farming-table-row">
+                                                <div class="liquidity-pools-farming-table-row-bg">
+                                                    <div
+                                                        class="liquidity-pools-farming-table-collaps-btn collapsBtn">
+                                                        <ul>
+                                                            <li>
+                                                                <div class="liquidity-farmig-item-img">
+                                                                    <span class="img-1"><img
+                                                                            src="assets/images/liquidity/token6.png"
+                                                                            alt="img"
+                                                                            class="img-fluid" /></span>
+                                                                    <span class="img-2"><img
+                                                                            src="assets/images/liquidity/token6.2.png"
+                                                                            alt="img"
+                                                                            class="img-fluid" /></span>
+                                                                </div>
+                                                                <h5>LINK-EMC / LINK</h5>
+                                                            </li>
+                                                            <li><span>APY</span>42.55 %</li>
+                                                            <li><span>APR</span>23.99%</li>
+                                                            <li><span>Liquidity</span>$6 100 815</li>
+                                                            <li><span>Multiplier</span>152x</li>
+                                                            <li><span>Earned</span>--</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div
+                                                        class="liquidity-pools-farming-table-collaps-content collapsContent">
+                                                        <div
+                                                            class="liquidity-pools-farming-table-collaps-content-inner">
+                                                            <form>
+                                                                <ol class="list1">
+                                                                    <li>
+                                                                        <div class="liquidity-collaps-input-top">
+                                                                            <label>Deposit</label>
+                                                                            <h6>Your balance: 156 AAVE</h6>
+                                                                        </div>
+                                                                        <div
+                                                                            class="liquidity-collaps-input">
+                                                                            <input type="text" value="0.00">
+                                                                            <div
+                                                                                class="liquidity-collaps-input-btns">
+                                                                                <span>MAX</span>
+                                                                                <button class="approve"
+                                                                                    type="button">Approve</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <label>Pending Rewards</label>
+                                                                        <div class="pending-rewards-text">
+                                                                            <h4>2.23 AAVE</h4>
+                                                                            <button
+                                                                                class="claim">Claim</button>
+                                                                        </div>
+                                                                    </li>
+                                                                </ol>
+                                                                <a href="add-liquidity.html" class="add-liquidity-link">Add Liquidity &nbsp; +</a>
+                                                            </form>
+                                                            <div
+                                                                class="liquidity-pools-farming-table-collaps-footer">
+                                                                <a href="#">Get AAVE-HUSD<span><img
+                                                                            src="assets/images/icon/view-icon.svg"
+                                                                            alt="icon"
+                                                                            class="img-fluid" /></span></a>
+
+                                                                <a href="#">View Contract <span><img
+                                                                            src="assets/images/icon/view-icon.svg"
+                                                                            alt="icon"
+                                                                            class="img-fluid" /></span></a>
+
+                                                                <a href="#">Unstaking Fee <span><img
+                                                                            src="assets/images/icon/info-circle.svg"
+                                                                            alt="icon"
+                                                                            class="img-fluid" /></span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                <!-- Liquidity Farming  Table End -->
+                </div>
+                <!-- footer section start -->
+                <div class="footer-section">
+                    <div class="container">
+                        <div class="footer-inner">
+                            <p>Ⓒ CyberEx Finance all Rights Reserved</p>
+                            <ul>
+                                <li><a href="#" target="_blank"><img src="./assets/images/icon/telegram.svg" alt="icon"></a></li>
+                                <li><a href="#" target="_blank"><img src="./assets/images/icon/twitter.svg" alt="icon"></a></li>
+                                <li><a href="#" target="_blank"><img src="./assets/images/icon/discord.svg" alt="icon"></a></li>
+                                <li><a href="#" target="_blank"><img src="./assets/images/icon/medium.svg" alt="icon"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer section end -->
+            </div>
+        </div>
+    </section>
+    <!-- Banner Section End -->
+
+    <!-- All javascript files included here -->
+    <!-- jQuery v3.6.1 js -->
+    <script src="./assets/js/jquery-3.6.1.min.js"></script>
+    <!-- Bootstrap  v5.2.1 js -->
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- Iconify v3.0.0 js -->
+    <script src="./assets/js/iconify.min.js"></script>
+    <!-- modernizr js -->
+    <script src="./assets/js/modernizr.js"></script>
+    <!-- slick slider js -->
+    <script src="./assets/js/slick.min.js"></script>    
+    <!-- nice Select js -->
+    <script src="./assets/js/jquery-nice-select.js"></script>
+    <!-- Swap Token js -->
+    <script src="./assets/js/swap-token.js"></script>
+    <!-- Time Counter js -->
+    <script src="./assets/js/time-counter.js"></script>
+    <!-- Metamask Js -->
+    <script src="./assets/js/metamask.js"></script>
+    <script src="./assets/js/metamaskhandler.js"></script>
+    <script src="./assets/js/web3.min.js"></script>
+    <!-- custom js -->
+    <script src="./assets/js/main.js"></script>
+
+
+    <script>
+        // liquidity Table Collaps
+        let collapsHeading = document.querySelectorAll(".liquidity-pools-farming-table-collaps-btn");
+        let collapsPanel = document.querySelectorAll(".liquidity-pools-farming-table-collaps-content");
+
+        for (let i = 0; i < collapsHeading.length; i++) {
+            // Execute whenever an accordion is clicked 
+            collapsHeading[i].onclick = function () {
+                if (this.nextElementSibling.style.maxHeight) {
+                    hidePanels(); // Hide All open Panels 
+                } else {
+                    showPanel(this); // Show the panel
+                }
+            };
+        };
+
+        // Function to Show a Panel
+        function showPanel(elem) {
+            hidePanels();
+            elem.classList.add("active");
+            elem.nextElementSibling.style.maxHeight = elem.nextElementSibling.scrollHeight + "px";
+        };
+
+        // Function to Hide all shown Panels
+        function hidePanels() {
+            for (let i = 0; i < collapsPanel.length; i++) {
+                collapsPanel[i].style.maxHeight = null;
+                collapsHeading[i].classList.remove("active");
+            }
+        };
+    </script>
+
+    <script>
+        /*------------- 
+        Add Liquidity Table Tab
+        -----------------*/
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("liquidity-tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("liquidity-tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("liquidity-tablinks-defaultOpen").click();
+
+
+
+        /*------------- 
+        Add Liquidity Table Tab 2
+        -----------------*/
+        function openTab2(evt, tabName2) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("liquidity-tabcontent2");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("liquidity-tablinks2");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName2).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("liquidity-tablinks-defaultOpen2").click();
+    </script>
+
+    <script>
+        /*---------------------------
+    select dropdown script start
+    ---------------------------*/
+    var selectDropdown = $('.select-dropdown');
+    selectDropdown.niceSelect();
+    /*---------------------------
+    select dropdown script end
+    ---------------------------*/
+    </script>
+    
+</body>
+
+</html>

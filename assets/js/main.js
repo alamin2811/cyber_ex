@@ -139,7 +139,7 @@ Author URL: https://themeforest.net/user/uigigs/portfolio
 })(jQuery);
 
 /*-- Liquidity Table Tab Js start --*/
-var liquidityFarmingSection = $(".liquidity-farming-section");
+var liquidityFarmingSection = $(".farming-section");
 if (liquidityFarmingSection.length) {
     function openTab(evt, tabName) {
         var i, tabcontent, tablinks;

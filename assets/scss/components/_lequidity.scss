@@ -1,0 +1,816 @@
+/*-- Liquidity Table Buttons Sections --*/
+.farming-table-btn-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 17px;    
+}
+.farming-table-dropdown {
+    position: relative;
+
+    &:after {
+        content: url(../images/icons/dropdown-arrow.svg);
+        position: absolute;
+        right: 18px;
+        top: 13px;
+    }
+
+    & select {
+        background: transparent;
+        height: 50px;
+        width: 200px;
+        border: 1px solid #ffffff1a;
+        border-radius: 8px;
+        padding: 8px 20px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 13px;
+        color: #ffffff;
+        -webkit-appearance: none;
+
+        & option {
+            color: #000000;
+        }
+    }
+}
+.farming-table-btns {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    & ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        border-radius: 8px;
+        margin-right: 20px;
+
+        &.liquidity-tab-btns1 {
+            list-style: none;
+            padding: 0px;
+            margin-bottom: 0px;
+            & li {
+                width: 201px;
+
+                button {
+                    width: 100%;
+                }
+            }
+        }
+
+        & li {
+            &:nth-child(1) {
+                & button {
+                    border-radius: 8px 0px 0px 8px;
+                }
+            }
+
+            &:nth-last-child(1) {
+                & button {
+                    border-radius: 0px 8px 8px 0px;
+                }
+            }
+
+            & button {
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 45px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #ffffffb3;
+                border: 1px solid #ffffff1a;
+                height: 50px;
+                padding: 3px 12px;
+
+                &.active {
+                    color: #ffffff;
+                    background: #ffffff14;
+                }
+
+                &:hover {
+                    color: #ffffff;
+                    background: #ffffff14;
+                }
+            }
+        }
+    }
+}
+.liquidity-tabcontentTwo {
+    display: none;
+}
+
+/*-- liquidity-pools-farming-table --*/
+.liquidity-pools-farming-table {
+    margin-top: 40px;
+
+    & ul {
+        & li {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            & h5 {
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 18px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: 135px;
+                padding-right: 10px;
+                margin-bottom: 0px;
+            }
+            &:nth-child(1) {
+                font-weight: 500;
+            }
+
+            
+        }
+    }
+}
+
+.liquidity-farmig-item-img {
+    max-width: 67px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 8px;
+
+    & span {
+        position: relative;
+        height: 38px;
+        width: 38px;
+        overflow: hidden;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & img {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        &.img-1 {
+            z-index: 1;
+            border: 3px solid transparent;
+        }
+
+        &.img-2 {
+            z-index: 2;
+            margin-left: -10px;
+            border: 3px solid #172231;
+        }
+    }
+}
+.liquidity-staking-item-img {
+    max-width: 45px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 8px;
+    position: relative;
+
+    & span {
+        
+
+        & img {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        &.img-1 {
+            position: relative;
+        height: 38px;
+        width: 38px;
+        overflow: hidden;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+            z-index: 1;
+            border: 3px solid transparent;
+        }
+
+        &.img-2 {
+            height: 24px;
+            width: 24px;
+            overflow: hidden;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+            margin-left: -10px;
+            border: 3px solid #172231;
+            position: absolute;
+            right: 0px;
+            bottom: 0px
+        }
+    }
+}
+
+.liquidity-pools-farming-table-row-bg {
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.liquidity-pools-farming-table-collaps-btn {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(5px);
+    border-radius: 20px 20px 0px 0px;
+    padding: 26px 30px;
+    cursor: pointer;
+    position: relative;
+
+    &:after {
+        content: url(../images/icon/collaps-icon.svg);
+        position: absolute;
+        right: 30px;
+        top: 34px;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.05);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition-delay: 0.3s;
+    }
+
+    &.active {
+        &:after {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.add-liquidity-link {
+    position: absolute;
+    right: 30px;
+    top: 71px;
+    height: 30px;
+    width: 140px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    &:hover{
+        color: #FFFFFF;
+    }
+}
+
+// .liquidity-pools-farming-table-collaps-content
+.liquidity-pools-farming-table-row {
+    & ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 30px;
+        margin: 0px;
+        list-style: none;
+        padding: 0px;
+
+        & li {
+            flex-direction: column;
+            align-items: flex-start;
+            font-size: 15px;
+            line-height: 24px;
+            font-weight: 600;
+            font-family: 'Poppins';
+            span{
+                font-family: 'Inter';
+                color: rgba(255, 255, 255, 0.8);
+                font-size: 13px;
+                line-height: 24px;
+            }
+            &:nth-child(1) {
+                width: 22%;
+                align-items: center;
+                flex-direction: row;
+            }
+
+            &:nth-child(2) {
+                width: 16.6%;
+            }
+
+            &:nth-child(3) {
+                width: 16.6%;
+            }
+
+            &:nth-child(4) {
+                width: 16.6%;
+            }
+
+            &:nth-child(5) {
+                width: 16.6%;
+            }
+
+            &:nth-child(6) {
+                width: 16.6%;
+            }
+        }
+    }
+}
+.liquidity-pools-farming-table-collaps-content {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(5px);
+    border-radius: 0px 0px 20px 20px;
+    padding: 0px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    position: relative;
+    &-inner {
+        padding: 26px 30px 10px 30px;
+    }
+    & ol {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+        max-width: 788px;
+        &.list2{
+            max-width: 1005px;
+            li{
+                &:nth-child(1) {
+                    max-width: 370px;
+                    width: 100%;
+                }
+    
+                &:nth-child(2) {
+                    max-width: 242px;
+                    width: 100%;
+                } 
+                &:nth-child(3) {
+                    max-width: 229px;
+                    width: 100%;
+                } 
+            }
+        }
+
+        & li {
+            h4{
+                margin-bottom: 0px;
+            }
+            &:nth-child(1) {
+                max-width: 370px;
+                width: 100%;
+            }
+
+            &:nth-child(2) {
+                max-width: 300px;
+                width: 100%;
+            }  
+            & label {
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 18px;
+                color: #ffffff;
+                margin-bottom: 5px;
+                text-transform: uppercase;
+            }
+        
+            & h6 {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: #ffffffb3;
+                margin-bottom: 5px;
+            }          
+        }
+    }  
+}
+.liquidity-collaps-input-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.liquidity-pools-farming-table-collaps-footer {
+    margin-top: 28px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    & a {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #ffffff;
+        margin-right: 33px;
+        margin-bottom: 16px;
+        & span {
+            margin-left: 7px;
+        }
+    }
+}
+.liquidity-collaps-input {
+    border: 1px solid #ffffff1a;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+    max-width: 370px;
+    width: 100%;
+    margin-bottom: 11px;
+
+    & input {
+        border: none;
+        outline: none;
+        padding: 0px 15px;
+        background: transparent;
+        height: 50px;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+        color: #ffffff;
+        width: 60%;
+    }
+
+    
+}
+.liquidity-collaps-input-btns {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    & span {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #ffffffb3;
+        margin-right: 9px;
+    }
+
+    & button {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        border-radius: 8px;
+        height: 30px;
+        width: 100px;
+
+        &.approve {
+            color: #FFFFFF;
+            text-transform: uppercase;
+            background: linear-gradient(90deg, #3326B1 0%, #0AC6D4 100%);
+            border-radius: 8px;
+        }
+
+        &.withdraw {
+            background: #ffffff1a;
+            color: #ffffff;
+        }
+    }
+}
+.pending-rewards-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    max-width: 305px;
+    width: 100%;
+    flex-direction: row;
+
+    & h4 {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 27px;
+        color: #ffffff;
+    }
+
+    & button {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        border-radius: 8px;
+        height: 30px;
+        width: 100px;
+        color: #0AC6D4;
+        background: rgba(10, 198, 212, 0.2);
+        border-radius: 8px;
+    }
+}
+
+
+
+/*-- Farming Section start --*/
+.farming-toggle-switch {
+    display: flex;
+    align-items: center;
+
+    & strong {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: #ffffffb3;
+        margin-left: 14px;
+    }
+
+    & .switch {
+        position: relative;
+        display: inline-block;
+        width: 45px;
+        height: 24px;
+    }
+
+    & .switch {
+        & input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+    }
+
+    & .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+        background: #ffffff26;
+        border-radius: 15px;
+    }
+
+    & .slider:before {
+        position: absolute;
+        content: "";
+        height: 14px;
+        width: 14px;
+        left: 4px;
+        bottom: 5px;
+        background-color: #ffffff;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+        border-radius: 50%;
+    }
+
+    & input:checked + .slider {
+        background-color: #0AC6D4;
+    }
+
+    & input:focus + .slider {
+        box-shadow: 0 0 1px #0AC6D4;
+    }
+
+    & input:checked + .slider:before {
+        -webkit-transform: translateX(22px);
+        -ms-transform: translateX(22px);
+        transform: translateX(22px);
+    }
+}
+/* nice select style start */
+.nice-select {
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid #ffffff1a;
+    box-sizing: border-box;
+    clear: both;
+    cursor: pointer;
+    float: left;
+    height: 40px;
+    outline: none;
+    padding-left: 20px;
+    padding-right: 34px;
+    position: relative;
+    text-align: left !important;
+    transition: all 0.2s ease-in-out;
+    white-space: nowrap;
+    width: auto;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 120%;
+    color: #FFFFFF;
+
+    &:active,
+    &:hover,
+    &.open,
+    &:focus {
+        border-color: #ffffff1a;
+    }
+
+    & .current {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    &:after {
+        border-bottom: 2px solid #ffffffb3;
+        border-right: 2px solid #ffffffb3;
+        right: 16px;
+        width: 8px;
+        height: 8px;
+    }
+
+    & .list {
+        width: 100%;
+        margin-top: 10px;
+        padding: 10px 0;
+        background-color: #171829;
+    }
+
+    & .option:hover,
+    & .option.focus,
+    & .option.selected.focus {
+        background-color: rgba(255, 255, 255, 0.08);;
+    }
+}
+.select-list1 {
+    width: 140px;
+    height: 40px;
+}
+.select-list2 {
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 120%;
+    color: #FFFFFF;
+    background: transparent;
+}
+/* nice select style end */
+
+
+/*-- responsive --*/
+@media only screen and (max-width: 1200px){
+    .liquidity-pools-farming-table-collaps-content {
+        ol {
+            max-width: 710px;
+            li{
+                &:nth-child(2){
+                    max-width: 260px;
+                }
+            }
+        }
+    }
+}  
+@media only screen and (max-width: 991px){
+    .farming-table-btn-content{
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+    .farming-table-btns{
+        flex-wrap: wrap;
+        row-gap: 20px;
+        ul{
+            &.liquidity-tab-btns1 {
+                li{
+                    width: 150px;
+                }
+            }
+        }
+    }
+    .liquidity-pools-farming-table-row {
+        ul{
+            flex-wrap: wrap;
+            row-gap: 16px;
+            li{
+                width: 33% !important;
+            }
+        }
+    }
+    .liquidity-pools-farming-table-collaps-content {
+        ol{
+            flex-wrap: wrap;
+            &.list1{
+                li{
+                    &:nth-child(1){
+                        max-width: 100% !important;
+                        padding-right: 0px;
+                    }
+                    &:nth-child(2){
+                        max-width: 50% !important;
+                        padding-right: 40px;
+                    }
+                }
+            }
+            &.list2{
+                li{
+                    max-width: 50% !important;
+                    padding-right: 40px;
+                    &:nth-child(1){
+                        max-width: 100% !important;
+                        padding-right: 0px;
+                    }
+                }
+            }
+        }
+    }
+    .liquidity-collaps-input{
+        max-width:100%;
+        margin-top: 10px;
+    }
+    .add-liquidity-link{
+        top: 160px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+.liquidity-pools-farming-table-collaps-content {
+        ol{
+            &.list1 {
+                li{
+                    &:nth-child(2){
+                        max-width: 70% !important;
+                    }
+                }
+            }
+            &.list2{
+                li{
+                    padding-right: 16px;
+                }
+            }
+        }
+    }
+    .pending-rewards-text {
+        h4{
+            font-size: 18px;
+        }
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .liquidity-pools-farming-table-row {
+        ul{
+            li{
+                width: 50% !important;
+            }
+        }
+    }
+    .liquidity-pools-farming-table-collaps-content {
+        ol{
+            flex-wrap: wrap;
+            &.list1{
+                li{
+                    &:nth-child(2){
+                        max-width: 100% !important;
+                        padding-right: 0px;
+                    }
+                }
+            }
+            &.list2{
+                li{
+                    max-width: 100% !important;
+                    padding-right: 0px;
+                    &:nth-child(1){
+                        max-width: 100% !important;
+                        padding-right: 0px;
+                    }
+                }
+            }
+        }
+    }
+    .add-liquidity-link{
+        top: 210px;
+        left: 30px;
+    }
+    .liquidity-pools-farming-table-collaps-footer{
+        margin-top: 60px;
+        &.staking{
+            margin-top: 15px;
+        }
+    }
+}
+@media only screen and (max-width: 480px){
+    .liquidity-pools-farming-table-row {
+        ul{
+            li{
+                width: 50% !important;
+                &:nth-child(1){
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+    .liquidity-collaps-input-top{
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+}

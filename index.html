@@ -24,7 +24,7 @@
     <!-- custom css -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- responsive css -->
-    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <!-- <link rel="stylesheet" href="./assets/css/responsive.css"> -->
 </head>
 
 <body>
@@ -35,12 +35,35 @@
                 <a href="index.html" class="logo"><img src="./assets/images/logo/logo.png" alt="logo"></a>
                 <div class="menu-lust">
                     <ul>
-                        <li><a href="#" class="active">swap</a></li>
-                        <li><a href="#">farming</a></li>
-                        <li><a href="#">staking</a></li>
+                        <li><a href="./index.html" class="active">swap</a></li>
+                        <li><a href="./farming.html">farming</a></li>
+                        <li><a href="./staking.html">staking</a></li>
                     </ul>
                 </div>
-                <button class="connect-btn primary-btn">Connect Wallet</button>
+                <button class="connect-btn connect-btn1 primary-btn">Connect Wallet</button>
+
+                <div class="mobile-menu">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                        aria-controls="offcanvasNavbar" aria-label="Toggle navigation" fdprocessedid="7fbgmc">
+                        <span class="iconify" data-icon="fa6-solid:bars"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end mobile-menu-body" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <a href="./index.html" class="logo"><img src="./assets/images/logo/logo.png" alt="logo"></a>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><span class="iconify" data-icon="material-symbols:close-rounded"></span></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <ul class="mobile-menu-list">
+                                    <li><a href="./index.html" class="active">swap</a></li>
+                                    <li><a href="./farming.html">farming</a></li>
+                                    <li><a href="./staking.html">staking</a></li>
+                                    <li><button class="connect-btn primary-btn">Connect Wallet</button></li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -52,304 +75,34 @@
             <img src="./assets/images/shape/banner-shape.png" alt="shape">
         </div>
         <div class="overlay">
-            <div class="overlay2 uig-pb-120 uig-pt-165 uig-md-pb-80 uig-md-pt-120">
-                <div class="container">
-                    <!-- <div class="row">
-                        <div class="col-lg-6">
-                            <div class="banner-left uig-pt-50">
-                                <div class="banner-btn-section uig-mb-37">
-                                    <ul class="custom-ul nav nav-pills banner-btns" id="pills-tab" role="tablist">
-                                        <li class="nav-item" role="presentation">
-                                            <button class="nav-link uppercase active" id="SwapTabLink" data-bs-toggle="pill" data-bs-target="#SwapTab" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Swap</button>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                            <button class="nav-link uppercase" id="BridgeTabLink" data-bs-toggle="pill" data-bs-target="#BridgeTab" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Bridge</button>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                            <button class="nav-link uppercase" id="LiquidityTabLink" data-bs-toggle="pill" data-bs-target="#LiquidityTab" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Liquidity</button>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <h1 class="page-title uppercase">Web <span class="text-green">3.0</span> <span class="text-transform-none">DeFi</span> Multichain Trading Platform</h1>
-                                <p class="banner-pragraph uig-mb-21">The new era of the lowest exchange fee, profitable features & Multi-coin exchange web app</p>
-                                <div class="text-list">
-                                    <ul class="custom-ul">
-                                        <li><i class="fa-solid fa-check"></i>Trade anything & anywhere</li>
-                                        <li><i class="fa-solid fa-check"></i>Store and manage digital assets</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 tab-content">
-                            <div class="tab-pane fade show active" id="SwapTab" role="tabpanel" aria-labelledby="SwapTabLink">
-                                <div class="banner-right">
-                                    <div class="swap-token-section">
-                                        <div class="swap-token-content">
-                                            <div class="swap-token-market">
-                                                <div class="swap-item uig-mb-16">
-                                                    <div class="swap-item-left">
-                                                        <label>From</label>
-                                                        <div id="select-token-from" class="select-token-item">
-                                                            <button type="button" class="select-token-btn">
-                                                                <img src="./assets/images/coins/usdt.png" alt="coin-img">
-                                                                <span>USDT</span>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="swap-item-right">
-                                                        <p>Balance: 1220.45</p>
-                                                        <div class="input-group">
-                                                            <input type="text" class="form-control" name="price-from" value="0.00" placeholder="0.00">
-                                                            <button class="input-group-text">Max</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="convert-item text-center uig-mb-16">
-                                                    <button class="swap-btn">
-                                                        <img src="./assets/images/icon/convert.svg" alt="swap">
-                                                    </button>
-                                                </div>
-                                                <div class="swap-item uig-mb-30">
-                                                    <div class="swap-item-left">
-                                                        <label>To (estimated)</label>
-                                                        <div id="select-token-to" class="select-token-item">
-                                                            <button type="button" class="select-token-btn">
-                                                                <img src="./assets/images/coins/eth.png" alt="coin-img">
-                                                                <span>ETH</span>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="swap-item-right">
-                                                        <p>Balance: 0.54</p>
-                                                        <div class="input-group">
-                                                            <input type="text" class="form-control" name="price-from" value="0.00" placeholder="0.00">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <ul class="custom-ul swap-token-info uig-mb-30 uig-mt-30">
-                                                    <li>
-                                                        <p>Price: 1746.2 USDT per ETH</p>
-                                                    </li>
-                                                    <li>
-                                                        <p>Maximum sold : 176100 USDT</p>
-                                                    </li>
-                                                    <li>
-                                                        <p>Price Impact : <span class="color-primary">32.94%</span></p>
-                                                    </li>
-                                                    <li>
-                                                        <p>Liquidity Provider Fee : 1579 USDT</p>
-                                                    </li>
-                                                </ul>
-                                                <a href="#" class="primary-btn-lg w-100 uppercase flex align-center justify-center">
-                                                    <span class="btn-hov-section">
-                                                        <span class="btn-text">
-                                                            <span>Swap Token</span>
-                                                            <span>Swap Token</span>
-                                                        </span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swap-card-shadow swap-card-shadow1">
-                                        <div class="swap-card-shadow-content"></div>
-                                    </div>
-                                    <div class="swap-card-shadow swap-card-shadow2">
-                                        <div class="swap-card-shadow-content"></div>
-                                    </div>
-                                    <div class="swap-coin swap-coin1">
-                                        <img src="./assets/images/coins/coin_3.png" alt="coin icon" />
-                                    </div>
-                                    <div class="swap-coin swap-coin2">
-                                        <img src="./assets/images/coins/coin_1.png" alt="coin icon" />
-                                    </div>
-                                    <div class="swap-coin swap-coin3">
-                                        <img src="./assets/images/coins/coin_2.png" alt="coin icon" />
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="tab-pane fade" id="BridgeTab" role="tabpanel" aria-labelledby="BridgeTabLink">
-                                <div class="banner-right">
-                                    <div class="swap-token-section">
-                                        <div class="swap-token-content">
-                                            <div class="swap-token-market">
-                                                <div class="swap-item uig-mb-16">
-                                                    <div class="swap-item-left">
-                                                        <label>From</label>
-                                                        <div id="select-token-from" class="select-token-item">
-                                                            <button type="button" class="select-token-btn">
-                                                                <img src="./assets/images/coins/usdt.png" alt="coin-img">
-                                                                <span>USDT</span>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="swap-item-right">
-                                                        <p>Balance: 1220.45</p>
-                                                        <div class="input-group">
-                                                            <input type="text" class="form-control" name="price-from" value="0.00" placeholder="0.00">
-                                                            <button class="input-group-text">Max</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="convert-item text-center uig-mb-16">
-                                                    <button class="swap-btn">
-                                                        <img src="./assets/images/icon/convert.svg" alt="swap">
-                                                    </button>
-                                                </div>
-                                                <div class="swap-item uig-mb-30">
-                                                    <div class="swap-item-left">
-                                                        <label>To (estimated)</label>
-                                                        <div id="select-token-to" class="select-token-item">
-                                                            <button type="button" class="select-token-btn">
-                                                                <img src="./assets/images/coins/eth.png" alt="coin-img">
-                                                                <span>ETH</span>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="swap-item-right">
-                                                        <p>Balance: 0.54</p>
-                                                        <div class="input-group">
-                                                            <input type="text" class="form-control" name="price-from" value="0.00" placeholder="0.00">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <ul class="custom-ul swap-token-info uig-mb-30 uig-mt-30">
-                                                    <li>
-                                                        <p>Crosschain Fee : 0.00 %, Gas fee 0.00 BNB</p>
-                                                    </li>
-                                                    <li>
-                                                        <p>Bridge Rate : 1 LTC on ≈ 1.0000004768371582 LTC</p>
-                                                    </li>
-                                                    <li>
-                                                        <p>Minimum Received : <span class="color-primary">0.00 USDT</span></p>
-                                                    </li>
-                                                    <li>
-                                                        <p>Estimated Time of Arrival : 5-20 minutes</p>
-                                                    </li>
-                                                </ul>
-                                                <a href="#" class="primary-btn-lg w-100 uppercase flex align-center justify-center">
-                                                    <span class="btn-hov-section">
-                                                        <span class="btn-text">
-                                                            <span>Transfer</span>
-                                                            <span>Transfer</span>
-                                                        </span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swap-card-shadow swap-card-shadow1">
-                                        <div class="swap-card-shadow-content"></div>
-                                    </div>
-                                    <div class="swap-card-shadow swap-card-shadow2">
-                                        <div class="swap-card-shadow-content"></div>
-                                    </div>
-                                    <div class="swap-coin swap-coin1">
-                                        <img src="./assets/images/coins/coin_3.png" alt="coin icon" />
-                                    </div>
-                                    <div class="swap-coin swap-coin2">
-                                        <img src="./assets/images/coins/coin_1.png" alt="coin icon" />
-                                    </div>
-                                    <div class="swap-coin swap-coin3">
-                                        <img src="./assets/images/coins/coin_2.png" alt="coin icon" />
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="tab-pane fade" id="LiquidityTab" role="tabpanel" aria-labelledby="LiquidityTabLink">
-                                <div class="banner-right">
-                                    <div class="swap-token-section">
-                                        <div class="swap-token-content">
-                                            <div class="swap-token-market">
-                                                <div class="swap-item uig-mb-16">
-                                                    <div class="swap-item-left">
-                                                        <label>From</label>
-                                                        <div id="select-token-from" class="select-token-item">
-                                                            <button type="button" class="select-token-btn">
-                                                                <img src="./assets/images/coins/usdt.png" alt="coin-img">
-                                                                <span>USDT</span>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="swap-item-right">
-                                                        <p>Balance: 1220.45</p>
-                                                        <div class="input-group">
-                                                            <input type="text" class="form-control" name="price-from" value="0.00" placeholder="0.00">
-                                                            <button class="input-group-text">Max</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="convert-item text-center uig-mb-16">
-                                                    <button class="swap-btn">
-                                                        <img src="./assets/images/icon/convert.svg" alt="swap">
-                                                    </button>
-                                                </div>
-                                                <div class="swap-item uig-mb-30">
-                                                    <div class="swap-item-left">
-                                                        <label>To (estimated)</label>
-                                                        <div id="select-token-to" class="select-token-item">
-                                                            <button type="button" class="select-token-btn">
-                                                                <img src="./assets/images/coins/eth.png" alt="coin-img">
-                                                                <span>ETH</span>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="swap-item-right">
-                                                        <p>Balance: 0.54</p>
-                                                        <div class="input-group">
-                                                            <input type="text" class="form-control" name="price-from" value="0.00" placeholder="0.00">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <ul class="custom-ul swap-token-info uig-mb-30 uig-mt-30">
-                                                    <li>
-                                                        <p>458.56 USDT / BNB</p>
-                                                    </li>
-                                                    <li>
-                                                        <p>0.025 BNB / USDT</p>
-                                                    </li>
-                                                    <li>
-                                                        <p>53.52% Share of Pool</p>
-                                                    </li>
-                                                    <li>
-                                                        <p>Liquidity Provider Fee : 1579 USDT</p>
-                                                    </li>
-                                                    
-                                                </ul>
-                                                <a href="#" class="primary-btn-lg w-100 uppercase flex align-center justify-center">
-                                                    <span class="btn-hov-section">
-                                                        <span class="btn-text">
-                                                            <span>Supply</span>
-                                                            <span>Supply</span>
-                                                        </span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swap-card-shadow swap-card-shadow1">
-                                        <div class="swap-card-shadow-content"></div>
-                                    </div>
-                                    <div class="swap-card-shadow swap-card-shadow2">
-                                        <div class="swap-card-shadow-content"></div>
-                                    </div>
-                                    <div class="swap-coin swap-coin1">
-                                        <img src="./assets/images/coins/coin_3.png" alt="coin icon" />
-                                    </div>
-                                    <div class="swap-coin swap-coin2">
-                                        <img src="./assets/images/coins/coin_1.png" alt="coin icon" />
-                                    </div>
-                                    <div class="swap-coin swap-coin3">
-                                        <img src="./assets/images/coins/coin_2.png" alt="coin icon" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-    
+            <div class="overlay2 uig-pt-165 uig-md-pt-120">
+                <div class="container uig-pb-120 uig-md-pb-80">
                     <div class="banner-right">
                         <div class="swap-token-section">
+                            <div class="swap-token-top">
+                                <div class="swap-token-top-left">
+                                    <h2>Swap token</h2>
+                                </div>
+                                <div class="swap-token-top-right">
+                                    <ul class="actions-list">
+                                        <li>
+                                            <a href="#">
+                                                <img src="./assets/images/icon/refresh.svg" alt="icon">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./assets/images/icon/info.svg" alt="icon">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./assets/images/icon/setting.svg" alt="icon">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                             <div class="swap-token-content">
                                 <div class="swap-token-market">
                                     <div class="swap-item uig-mb-16">
@@ -393,27 +146,24 @@
                                         </div>
                                     </div>
 
-                                    <a href="#" class="primary-btn-lg w-100 uppercase flex align-center justify-center">
-                                        <span class="btn-hov-section">
-                                            <span class="btn-text">
-                                                <span>Swap</span>
-                                                <span>Swap</span>
-                                            </span>
-                                        </span>
-                                    </a>
+                                    <a href="#" class="primary-btn-lg w-100 uppercase flex align-center justify-center">Swap</a>
 
-                                    <ul class="custom-ul swap-token-info uig-mb-30 uig-mt-30">
+                                    <ul class="custom-ul swap-token-info uig-mt-30">
                                         <li>
-                                            <p>Price: 1746.2 USDT per ETH</p>
+                                            <p>Minimum Received</p>
+                                            <p>3.827 BUSD</p>
                                         </li>
                                         <li>
-                                            <p>Maximum sold : 176100 USDT</p>
+                                            <p>Price Impact</p>
+                                            <p class="color-primary">6.22%</p>
                                         </li>
                                         <li>
-                                            <p>Price Impact : <span class="color-primary">32.94%</span></p>
+                                            <p>Trading Fee</p>
+                                            <p>0.000009988 ETH</p>
                                         </li>
                                         <li>
-                                            <p>Liquidity Provider Fee : 1579 USDT</p>
+                                            <p>Route</p>
+                                            <p>ETH > USDT > BUSD</p>
                                         </li>
                                     </ul>
                                 </div>
@@ -421,10 +171,27 @@
                         </div>
                     </div>
                 </div>
+                <!-- footer section start -->
+                <div class="footer-section">
+                    <div class="container">
+                        <div class="footer-inner">
+                            <p>Ⓒ CyberEx Finance all Rights Reserved</p>
+                            <ul>
+                                <li><a href="#" target="_blank"><img src="./assets/images/icon/telegram.svg" alt="icon"></a></li>
+                                <li><a href="#" target="_blank"><img src="./assets/images/icon/twitter.svg" alt="icon"></a></li>
+                                <li><a href="#" target="_blank"><img src="./assets/images/icon/discord.svg" alt="icon"></a></li>
+                                <li><a href="#" target="_blank"><img src="./assets/images/icon/medium.svg" alt="icon"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer section end -->
             </div>
         </div>
     </section>
     <!-- Banner Section End -->
+
+    
     
     
     
@@ -853,7 +620,6 @@
                             </a>
                         </li>
                     </ul>
-                    <button class="manage-token-btn">Manage Tokens</button>
                 </div>
             </div>
         </div>
@@ -861,7 +627,7 @@
     <!-- select token modal end -->
     
     <!-- connect wallet modal start -->
-    <div class="modal fade theme-modal" id="connect-wallet-modal" tabindex="-1"
+    <!-- <div class="modal fade theme-modal" id="connect-wallet-modal" tabindex="-1"
         aria-labelledby="connect-wallet-modal-label" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -935,11 +701,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- connect wallet modal end -->
     
     <!-- Download Metamask modal start -->
-    <div class="modal fade theme-modal" id="download-metamask" tabindex="-1"
+    <!-- <div class="modal fade theme-modal" id="download-metamask" tabindex="-1"
         aria-labelledby="connect-wallet-modal-label" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -969,7 +735,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Download Metamask modal end -->
     
     <!-- All javascript files included here -->

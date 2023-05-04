@@ -289,16 +289,16 @@
     line-height: 45px;
   }
   /*-- BreadCumbs Section End --*/
-  /*-- liquidity-farming Pools Start --*/
-  .liquidity-farming-table-btn-content .liquidity-farming-table-btns ul.liquidity-tab-btns1 li {
+  /*-- farming Pools Start --*/
+  .farming-table-btn-content .farming-table-btns ul.liquidity-tab-btns1 li {
     width: 130px;
   }
-  .liquidity-farming-table-btn-content .liquidity-farming-table-btns ul.liquidity-tab-btns1 li button {
+  .farming-table-btn-content .farming-table-btns ul.liquidity-tab-btns1 li button {
     font-size: 14px;
     height: 45px;
     padding: 0px 12px;
   }
-  /*-- liquidity-farming- Pools End --*/
+  /*-- farming- Pools End --*/
   /*-- News Details Start--*/
   .news-details-left .news-details-title {
     font-size: 32px;

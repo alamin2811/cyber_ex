@@ -34,51 +34,24 @@ CSS table of content
 03. Component Style
 --------------------------------*/
 @import './components/buttons';
-@import './components/swap-token';
-@import './components/counter-section';
-@import './components/faq';
-@import './components/newsletter';
-@import './components/breadcumbs';
-@import './components/liquidity-farming';
-@import './components/pagination';
+@import './components/swap-token'; 
+@import './components/lequidity';
 
 /*--------------------------------
 04. Header style
 --------------------------------*/
 @import './sections/header/header';
+@import './sections/header/mobile-menu';
 
 /*--------------------------------
 05. Banner Style
 --------------------------------*/
-@import './sections/hero/hero1';
+@import './sections/hero/hero';
+
 
 /*--------------------------------
-06. home1 Style
---------------------------------*/
-@import './sections/index1/features';
-@import './sections/index1/our-backers';
-@import './sections/index1/roadmap';
-@import './sections/index1/launchpad';
-@import './sections/index1/multi-chain';
-
-/*--------------------------------
-07. NFTs Section
---------------------------------*/
-@import './sections/nfts/nfts';
-
-/*--------------------------------
-08. Voting Section
---------------------------------*/
-@import './sections/voting/voting';
-@import './sections/voting/voting-details';
-
-/*--------------------------------
-09. News Section
---------------------------------*/
-@import './sections/news/news';
-@import './sections/news/news-details';
-
-/*--------------------------------
-10. Footer Section
+06. footer Style
 --------------------------------*/
 @import './sections/footer/footer';
+
+
