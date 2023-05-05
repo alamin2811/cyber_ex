@@ -28378,6 +28378,7 @@ CSS table of content
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
+  margin-bottom: 5px;
 }
 .swap-token-content input {
   padding: 0;
@@ -28419,7 +28420,7 @@ CSS table of content
 .swap-item-left {
   background: rgba(255, 255, 255, 0.0392156863);
   border-radius: 8px 0 0 8px;
-  min-height: 105px;
+  min-height: 109px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -28526,6 +28527,9 @@ CSS table of content
 .theme-modal .modal-body {
   padding: 0;
 }
+.theme-modal .modal-body form {
+  padding: 0px 40px;
+}
 .theme-modal h5 {
   font-size: 24px;
   font-weight: 600;
@@ -28557,8 +28561,8 @@ CSS table of content
 
 /* select-token-search style */
 .select-token-search {
-  margin: 0 40px 30px;
-  width: 350px;
+  margin-bottom: 30px;
+  width: 100%;
   height: 60px;
   background: rgba(255, 255, 255, 0.0784313725);
   -webkit-backdrop-filter: blur(10px);
@@ -29574,6 +29578,7 @@ CSS table of content
   background-size: cover;
   min-height: 100vh;
   position: relative;
+  background-attachment: fixed;
 }
 .banner-section .banner-shape {
   position: fixed;
